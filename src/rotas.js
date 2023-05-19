@@ -1,21 +1,32 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
-import Home from './screens/Home';
-import CreateNote from './screens/CreateNote';
-import EditNote from './screens/EditNote';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import Login from './screens/Login';
+import Perfil from './screens/Perfil';
+import Nota from './screens/Nota';
 
-const Stack = createStackNavigator();
+const Stack = createNativeStackNavigator();
 
 export default function Rotas() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen name="Home" component={Home} />
-        <Stack.Screen name="CreateNote" component={CreateNote} />
-        <Stack.Screen name="EditNote" component={EditNote} />
+        <Stack.Screen
+          name="Login"
+          component={Login}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="Perfil"
+          component={Perfil}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="Nota"
+          component={Nota}
+          options={{ headerShown: false }}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );
-};
-
+}
