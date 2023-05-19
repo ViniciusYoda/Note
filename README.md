@@ -46,4 +46,28 @@ Antes de começar, certifique-se de ter as seguintes ferramentas instaladas em s
 
 1. Clone o repositório para o seu sistema local:
 
-git clone https://github.com/seu-usuario/note-app.git
+git clone https://github.com/ViniciusYoda/Note.git
+
+
+2. Navegue até o diretório do projeto:
+
+cd Note
+
+
+3. Instale as dependências do projeto:
+
+npm install
+
+
+4. Configuração do Firebase:
+
+   - Crie um projeto Firebase em https://console.firebase.google.com
+   - Copie as configurações do SDK do Firebase (apiKey, authDomain, projectId, etc.) para o arquivo `config/firebase.js` do projeto.
+   - Ative a autenticação do provedor Google no console do Firebase.
+   - Defina as regras de acesso ao Firestore conforme necessário.
+
+5. Execute o aplicativo no emulador ou dispositivo:
+
+npm start
+
+6. E aproveite o aplicativo
