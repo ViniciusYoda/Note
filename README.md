@@ -2,7 +2,7 @@
 
 Este é um aplicativo simples de notas desenvolvido com React Native e Firebase.
 
-## Funcionalidades
+## Funcionalidades 
 
 - Autenticação de usuário com o Google
 - Criação, edição e exclusão de notas
