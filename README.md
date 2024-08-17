@@ -1,4 +1,4 @@
-# Note App
+# Note App:
 
 Este é um aplicativo simples de notas desenvolvido com React Native e Firebase.
 
